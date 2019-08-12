@@ -1,4 +1,5 @@
 require 'csv'
+require 'byebug'
 
 module ImportUsers
   FILENAMES = {
@@ -12,10 +13,15 @@ module ImportUsers
       %w[teachers students parents].inject({}) do |hsh, user_type|
         rows = rows_for(user_type)
         hsh.merge normalize(rows, user_type)
+        x = hsh.merge normalize(rows, user_type)
+        puts x
+        debugger
+        x
       end
     end
 
     def rows_for(user_type)
+      # debugger
       pathname = "#{File.dirname(__FILE__)}/../csv-files/#{FILENAMES.fetch(user_type)}"
       file = File.read(pathname)
       rows = CSV.parse(file, headers: true)
@@ -25,6 +31,7 @@ module ImportUsers
       rows.each_with_object({}) do |row, hsh|
         user_hsh = send("normalize_#{user_type[0..-2]}".to_sym, row)
         hsh[user_hsh.fetch(:email)] = user_hsh
+        # puts hsh
       end
     end
 

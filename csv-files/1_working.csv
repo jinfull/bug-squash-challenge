@@ -1,0 +1,4 @@
+school_id,student_id,student_first_name,student_last_name,dob,grade,student_email,student_phone,guardian_first_name,guardian_last_name,guardian_email,guardian_phone
+0,student_0,Student_0,StudentLast_0,2000-11-27,1,student.studentlast0@061e09b6a8c0950342b51e14f70960e9.exampleschool.org,"",Parent_0,ParentLast_0,parent0_of.student_0@061e09b6a8c0950342b51e14f70960e9.exampleschool.org,""
+0,student_0,Student_0,StudentLast_0,2001-11-27,1,student.studentlast0@061e09b6a8c0950342b51e14f70960e9.exampleschool.org,"",Parent_1,ParentLast_0,parent1_of.student_0@061e09b6a8c0950342b51e14f70960e9.exampleschool.org,""
+0,student_1,Student_1,StudentLast_1,2000-11-27,2,student.studentlast1@061e09b6a8c0950342b51e14f70960e9.exampleschool.org,"",Parent_0,ParentLast_1,parent0_of.student_1@061e09b6a8c0950342b51e14f70960e9.exampleschool.org,""

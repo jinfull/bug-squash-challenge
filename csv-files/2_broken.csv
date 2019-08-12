@@ -1,0 +1,2 @@
+school_id,student_id,student_first_name,student_last_name,dob,grade,student_email,student_phone,guardian_first_name,guardian_last_name,guardian_email,guardian_phone
+1,student_167,Student_167 "Maverick",StudentLast_167,2000-11-27,3,student.studentlast167@061e09b6a8c0950342b51e14f70960e9.exampleschool.org,"",Parent_0,ParentLast_167,parent0_of.student_167@061e09b6a8c0950342b51e14f70960e9.exampleschool.org,""
